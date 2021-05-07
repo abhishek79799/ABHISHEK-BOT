@@ -5,10 +5,10 @@ from telethon import events, Button
 
 @BotzHub.on(events.NewMessage(incoming=True, pattern="/start"))
 async def start(event):
-    await event.reply("Hello!",
+    await event.reply("𝙷𝙴𝙻𝙻𝙾 𝚅𝙼𝚁𝙾",
                     buttons=[
-                        [Button.url("ButtonUrl", url="https://t.me/xditya")],
-                        [Button.inline("Inline Button",data="example")]
+                        [Button.url("Moi Creator", url="https://t.me/shashank_xD")],
+                        [Button.inline("Support Group", url="https://t.me/coffinxsupport")]
                     ])
 
 @BotzHub.on(events.callbackquery.CallbackQuery(data="example"))
