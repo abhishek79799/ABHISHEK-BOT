@@ -8,9 +8,9 @@
         "telegram-bot",
         "botzhub"
     ],
-    "repository": "https://github.com/xditya/TelethonBot",
-    "website": "xditya.me",
-    "success_url": "https://t.me/BotzHub",
+    "repository": "https://github.com/theshashankk/TelethonBot",
+    "website": "https://github.com/theshashankk/TelethonBot",
+    "success_url": "https://github.com/theshashankk/TelethonBot",
     "env": {
         "API_HASH": {
             "description": "You API HASH from my.telegram.org",
