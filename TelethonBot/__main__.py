@@ -19,7 +19,7 @@ for name in files:
         load_plugins(plugin_name.replace(".py", ""))
 
 print("Successfully deployed!")
-print("Enjoy! Do visit @BotzHub")
+print("Enjoy! Do visit @CoffinXsupport")
 
 if __name__ == "__main__":
     BotzHub.run_until_disconnected()
