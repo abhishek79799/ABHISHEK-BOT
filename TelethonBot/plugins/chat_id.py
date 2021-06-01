@@ -1,3 +1,6 @@
+
+
+from .. import BotzHub
 from telethon import events
 from telethon.utils import pack_bot_file_id
 
