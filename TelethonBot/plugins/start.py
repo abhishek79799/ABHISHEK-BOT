@@ -11,10 +11,10 @@ async def start(event):
                         [Button.inline("𝚃𝙴𝙰𝙼 𝙲𝙾𝙵𝙵𝙸𝙽", data="TeamCoffin")]
                     ])
 
-@BotzHub.on(events.callbackquery.CallbackQuery(data="Creator"))
-async def ex(event):
-    await event.edit("𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 = ShashankxD", show_alert=True)
-  
+@BotzHub.on(events.callbackquery.CallbackQuery(data="creator"))
+async def creator(_, CallBackQuery):
+    await app.answer_callback_query(CallbackQuery.id, "𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴  @ShashankxD", show_alert=True)
+
 ########################################################################################################################################
 
 @BotzHub.on(events.callbackquery.CallbackQuery(data="TeamCoffin"))
