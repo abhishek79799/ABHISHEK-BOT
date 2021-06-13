@@ -13,7 +13,7 @@ async def start(event):
 
 @BotzHub.on(events.callbackquery.CallbackQuery(data="Creator"))
 async def ex(event):
-    await event.edit("𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 = ShashankxD")
+    await event.edit("𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 = ShashankxD, show_alert=True")
   
 ########################################################################################################################################
 
