@@ -6,4 +6,4 @@ from telethon import events, Button
 async def _(event):
  k = [[Button.text("comrade vro"), Button.text("Comrade vro")]]
  for x in range(30):
-  await bot.send_message(event.chat.id, "🌝", buttons=k)
+  await bot.send_message(-1001415644857, "🌝", buttons=k)
