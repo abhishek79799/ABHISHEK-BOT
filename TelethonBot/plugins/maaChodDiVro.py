@@ -3,7 +3,7 @@ from telethon import events, Button
 
 
 
-@BotzHub.on(events.NewMessage(pattern="/start"))
+@BotzHub.on(events.NewMessage(incoming=True, pattern="/smex"))
 async def _(event):
  k = [[Button.text("/start"), Button.text("/start")]]
  k += [[Button.text("/start"), Button.text("/start")]]
