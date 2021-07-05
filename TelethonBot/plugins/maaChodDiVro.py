@@ -8,4 +8,4 @@ STIMCKER = "CAACAgUAAxkBAAEKscVg4s7cLSlvdXiZ-XUmM6Nmda5tygACDAQAApp9kFSQcgrtjd-d
 )
 async def _(event):
   k = [[Button.text("vai")]]
-  await event.send_message(-1001252221175, "🌝", buttons=k)
+  await event.reply_sticker(-1001252221175, STIMCKER, buttons=k)
