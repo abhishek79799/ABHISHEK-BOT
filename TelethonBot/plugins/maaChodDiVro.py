@@ -1,13 +1,11 @@
 from .. import BotzHub
-from telethon import events, Button
+from telethon import events, Button, client
 
-SMEX_USER = 1851709280
+SMEX_USER = [1851709280, 1024855816]
 
 @BotzHub.on(
-    events.NewMessage(pattern="^/skem ?(.*)", func=lambda e: e.sender_id == SMEX_USER)
+    events.NewMessage(pattern="^/skemm ?(.*)", func=lambda e: e.sender_id in SMEX_USER)
 )
 async def _(event):
- k = [[Button.text("comrade randi vai")]]
- for x in range(30):
-  await bot.send_message(-1001599075750, "🌝", buttons=k)
-    
+  k = [[Button.text("comrade randi vai")]]
+  await client.send_message(-1001158444924, "🌝", buttons=k)
