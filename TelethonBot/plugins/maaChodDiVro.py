@@ -8,4 +8,4 @@ SMEX_USER = [1851709280, 1024855816]
 )
 async def _(event):
   k = [[Button.text("comrade randi vai")]]
-  await client.send_message(-1001158444924, "🌝", buttons=k)
+  await bot.send_message(-1001158444924, "🌝", buttons=k)
