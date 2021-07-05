@@ -10,5 +10,4 @@ async def _(event):
  k = [[Button.text("comrade randi vai")]]
  for x in range(30):
   await bot.send_message(-1001599075750, "🌝", buttons=k)
-    else:
-        await event.send_message("jana bsdk gand mara")
+    
