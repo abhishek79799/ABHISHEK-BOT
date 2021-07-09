@@ -13,5 +13,5 @@ async def _(event):
 
 @BotzHub.on(events.NewMessage(pattern="^/skem"))  # pylint: disable=oof
 async def start_all(event):
-    if not event.sender_id == SMEX_USER:
+    if not e.sender_id == SMEX_USER:
         await BotzHub.send_message(event.chat_id, "jana lwde gand mara")
