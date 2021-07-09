@@ -1,11 +1,13 @@
 # By < @xditya >
 # // @BotzHub //
 from .. import BotzHub
+from TelethonBot.plugins.alive import SMEX_PIC
 from telethon import events, custom, Button
 
 @BotzHub.on(events.NewMessage(incoming=True, pattern="/start"))
 async def start(event):
-    await event.reply("ＨＥＬＬＯ  ＶＭＲＯ!!\n𝙸'𝙼 𝙿𝙴𝚁𝚂𝙾𝙽𝙰𝙻 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 𝙾𝙵 @ShashankxD \n𝙿𝚁𝙴𝚂𝚂 𝚃𝙷𝙴 𝙱𝙴𝙻𝙾𝚆 𝙱𝚄𝚃𝚃𝙾𝙽 𝚃𝙾 𝙺𝙽𝙾𝚆 𝙼𝙾𝚁𝙴 𝙰𝙱𝙾𝚄𝚃 𝚂𝙷𝙰𝚂𝙷𝙰𝙽𝙺",
+    await event.send_file("ＨＥＬＬＯ  ＶＭＲＯ!!\n𝙸'𝙼 𝙿𝙴𝚁𝚂𝙾𝙽𝙰𝙻 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 𝙾𝙵 @ShashankxD \n𝙿𝚁𝙴𝚂𝚂 𝚃𝙷𝙴 𝙱𝙴𝙻𝙾𝚆 𝙱𝚄𝚃𝚃𝙾𝙽 𝚃𝙾 𝙺𝙽𝙾𝚆 𝙼𝙾𝚁𝙴 𝙰𝙱𝙾𝚄𝚃 𝚂𝙷𝙰𝚂𝙷𝙰𝙽𝙺",
+                    file=SMEX_PIC,
                     buttons=[
                         [Button.inline("My creator", data="Creator")],
                         [Button.inline("HELP", data="mhelp")]
