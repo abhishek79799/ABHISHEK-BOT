@@ -9,9 +9,10 @@ async def start(event):
                     captions="ＨＥＬＬＯ  ＶＭＲＯ!!\n𝙸'𝙼 𝙿𝙴𝚁𝚂𝙾𝙽𝙰𝙻 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 𝙾𝙵 @ShashankxD \n𝙿𝚁𝙴𝚂𝚂 𝚃𝙷𝙴 𝙱𝙴𝙻𝙾𝚆 𝙱𝚄𝚃𝚃𝙾𝙽 𝚃𝙾 𝙺𝙽𝙾𝚆 𝙼𝙾𝚁𝙴 𝙰𝙱𝙾𝚄𝚃 𝚂𝙷𝙰𝚂𝙷𝙰𝙽𝙺",
                     SMEX_PIC,
                     buttons=[
-                        [Button.inline("My creator", data="Creator")],
-                        [Button.inline("HELP", data="mhelp")]
-                    ])
+                                      (Button.inline(
+                                          "Pugins >>",
+                                          data="mhelp"))]
+                                  )
 
 @BotzHub.on(events.callbackquery.CallbackQuery(data="creator"))
 async def creator(event):
