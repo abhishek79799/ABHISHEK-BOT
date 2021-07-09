@@ -15,12 +15,12 @@ async def _(event):
                         [Button.url("𝙼𝚢 𝚌𝚛𝚎𝚊𝚝𝚘𝚛", "t.me/ShashankxD")]
                     ])
 
-"""
+
 @BotzHub.on(events.NewMessage(pattern="^/skem"))  # pylint: disable=oof
 async def start_all(event):
-    if not event.sender_id == SMEX_USER:
-        await BotzHub.send_message(event.chat_id, "jana lwde gand mara")
-"""                 
+    if chat == "private":
+        await BotzHub.send_message(event.chat_id, "vro use this cmd in group not in pm")
+
 ###################################################
 @BotzHub.on(events.callbackquery.CallbackQuery(data="creator"))
 async def creator(event):
