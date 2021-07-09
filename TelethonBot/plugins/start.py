@@ -29,10 +29,10 @@ async def ommmmk(event):
                         [Button.inline("tools", data="mhelpk")]
                     ])
                      
-@BotzHub.on(events.callbackquery.CallbackQuery(data=re.compile(b"ots")))
-async def _(event):
+@BotzHub.on(events.callbackquery.CallbackQuery(data="ots"))
+async def oppppppppp(event):
     await event.edit("•/skem to start smexing./n•/stop to stop smex./n•/alive to check bot is alive or not.")
     
-@BotzHub.on(events.callbackquery.CallbackQuery(data=re.compile(b"mhelpk")))
-async def _(event):
+@BotzHub.on(events.callbackquery.CallbackQuery(data="mhelpk"))
+async def oooooookk(event):
     await event.edit("BHAJ YAAR TUM GAND MARAO")
