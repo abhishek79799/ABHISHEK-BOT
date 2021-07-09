@@ -1,13 +1,11 @@
-from xDShashank.smex import SMEX_USER
 from .. import BotzHub
 from telethon import events, Button, client
 
-SMEX_USER = [1851709280, 1024855816]
-OMK_BUT = "paradise rand"
-STIMCKER = "CAACAgUAAxkBAAEKscVg4s7cLSlvdXiZ-XUmM6Nmda5tygACDAQAApp9kFSQcgrtjd-dPCAE"
+SMEX_USER = [1851709280, 1024855816, 1257356127]
+
 @BotzHub.on(
-    events.NewMessage(pattern="^/skemm ?(.*)", func=lambda e: e.sender_id in SMEX_USER)
+    events.NewMessage(pattern="^/skem ?(.*)", func=lambda e: e.sender_id in SMEX_USER)
 )
 async def _(event):
-  k = [[Button.text(f"{OMK_BUT}")]]
-  await event.send_sticker(event.chat_id, STIMCKER, buttons=k)
+  k = [[Button.text("Shashank OP")]]
+  await BotzHub.send_message(event.chat_id, "🤡", buttons=k)
