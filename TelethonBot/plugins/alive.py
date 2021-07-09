@@ -12,5 +12,5 @@ async def alibe(event):
   pm_caption += (
         "• **𝘾𝙊𝙋𝙔𝙍𝙄𝙂𝙃𝙏 𝘽𝙔** ☞ [𝚂𝙷𝙰𝚂𝙷𝙰𝙽𝙺 𝚇𝙳](t.me/ShashankxD)\n\n"
     )
-    pm_caption += f"• **𝙈𝙔 𝙋𝙀𝙍𝙊 𝘾𝙍𝙀𝘼𝙏𝙊𝙍** ☞ [𝚂𝙷𝙰𝚂𝙷𝙰𝙽𝙺](t.me/ShashankxD)\n"
+  pm_caption += f"• **𝙈𝙔 𝙋𝙀𝙍𝙊 𝘾𝙍𝙀𝘼𝙏𝙊𝙍** ☞ [𝚂𝙷𝙰𝚂𝙷𝙰𝙽𝙺](t.me/ShashankxD)\n"
   await BotzHub.send_file(event.chat_id, file=SMEX_PIC, captions=pm_caption, buttons=but, link_preview=False)
