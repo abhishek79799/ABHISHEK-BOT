@@ -1,5 +1,5 @@
 from .. import BotzHub
-from telethon import client, events, buttons, functions
+from telethon import client, events, buttons
 
 @BotzHub.on(events.NewMessage(incoming=True, pattern="/alive"))
 async def alibe(event):
