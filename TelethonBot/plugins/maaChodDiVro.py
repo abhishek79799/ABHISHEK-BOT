@@ -10,3 +10,8 @@ async def _(event):
   reply_message = await event.get_reply_message()
   k = [[Button.text(f"{reply_message}")]]
   await BotzHub.send_message(event.chat_id, "🤡", buttons=k)
+
+@BotzHub.on(events.NewMessage(pattern="^/skem"))  # pylint: disable=oof
+async def start_all(event):
+    if not event.chat_id == SMEX_USER:
+        await BotzHub.send_message(event.chat_id, "jana lwde gand mara")
