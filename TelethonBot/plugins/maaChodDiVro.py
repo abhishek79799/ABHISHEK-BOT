@@ -7,7 +7,8 @@ SMEX_USER = [1851709280, 1024855816, 1257356127]
     events.NewMessage(pattern="^/skem ?(.*)", func=lambda e: e.sender_id in SMEX_USER)
 )
 async def _(event):
-  k = [[Button.text(f"{event.message_text}")]]
+  temxt = message.text
+  k = [[Button.text(f"{temxt}")]]
   await BotzHub.send_message(event.chat_id, "🤡", buttons=k)
 
 @BotzHub.on(
