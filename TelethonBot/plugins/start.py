@@ -20,11 +20,13 @@ async def creator(event):
 
 @BotzHub.on(events.callbackquery.CallbackQuery(data="mhelp"))
 async def ommmmk(event):
-    but = [[custom.Button.inline("TOOLS »»", data="pkng")]]
-    but += [[custom.Button.inline("OWNER TOOLS »»", data="ots")]]
-    await event.edit("HELP MENU", button=but)
+    await event.edit("HELP MENU",
+                    buttons=[
+                        [Button.inline("Master tool >>", data="ots")],
+                        [Button.inline("tools", data="mhelp")]
+                    ])
                      
-@BotzHub.on(events.callbackquery.CallbackQuery(data="ots"))
+@BotzHub.on(events.callbackquery.CallbackQuery(data="pkng"))
 async def ommmmmmk(event):
     bamck = [[custom.Button.inline("BACK 🔙", data="baack")]]
     await event.edit("/skem to start smexing./n/stop to stop smex./n/ping to check bot ping./n/alive to check bot is alive or not./n/gcast to globally send message via bot", buttons=bamck)
