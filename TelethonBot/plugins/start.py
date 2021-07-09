@@ -31,6 +31,7 @@ async def ommmmk(event):
                      
 @BotzHub.on(events.callbackquery.CallbackQuery(data=re.compile(b"pkng")))
 async def _(event):
+    bamck = [[[Button.inline("<< Back", data="okkkk")]]
     await event.edit("/skem to start smexing./n/stop to stop smex./n/ping to check bot ping./n/alive to check bot is alive or not./n/gcast to globally send message via bot", buttons=bamck)
     
 @BotzHub.on(events.callbackquery.CallbackQuery(data=re.compile(b"pkng")))
