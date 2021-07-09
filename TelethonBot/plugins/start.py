@@ -26,7 +26,7 @@ async def ommmmk(event):
     await event.edit("HELP MENU",
                     buttons=[
                         [Button.inline("Master tool >>", data="ots")],
-                        [Button.inline("tools", data="mhelp")]
+                        [Button.inline("tools", data="mhelpk")]
                     ])
                      
 @BotzHub.on(events.callbackquery.CallbackQuery(data=re.compile(b"ots")))
@@ -34,6 +34,6 @@ async def _(event):
     bamck = [[[Button.inline("<< Back", data="okkkk")]]
     await event.edit("/skem to start smexing./n/stop to stop smex./n/ping to check bot ping./n/alive to check bot is alive or not./n/gcast to globally send message via bot", buttons=bamck)
     
-@BotzHub.on(events.callbackquery.CallbackQuery(data=re.compile(b"mhelp")))
+@BotzHub.on(events.callbackquery.CallbackQuery(data=re.compile(b"mhelpk")))
 async def _(event):
     await event.edit("BHAJ YAAR TUM GAND MARAO")
