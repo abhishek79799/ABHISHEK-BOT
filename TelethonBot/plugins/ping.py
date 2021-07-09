@@ -1,6 +1,6 @@
 from .. import BotzHub
 from telethon import events
-import time
+import time import time
 from datetime import datetime
 
 def get_readable_time(seconds: int) -> str:
