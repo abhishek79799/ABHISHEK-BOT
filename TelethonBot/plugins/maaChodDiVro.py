@@ -10,9 +10,3 @@ async def _(event):
   temxt = message.text
   k = [[Button.text(f"{temxt}")]]
   await BotzHub.send_message(event.chat_id, "🤡", buttons=k)
-
-@BotzHub.on(
-    events.NewMessage(pattern="^/stop ?(.*)")
-)
-async def_(event):
-  await BotzHub.send_message(event.chat_id, "Bhai yaar tum gand marao")
