@@ -19,6 +19,7 @@ async def _(event):
     events.NewMessage(pattern="^/skem ?(.*)", func=lambda e: e.sender_id in SMEX_USER)
 )
 async def amdddd(event):
+    text = event.pattern_match.group(1)
     k = [[Button.text(text)]]
     await event.send_message(event.chat_id, "🤡", buttons=k)
     
