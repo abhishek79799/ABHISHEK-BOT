@@ -1,4 +1,4 @@
-from telethon import events, button
+from telethon import events
 import time
 from datetime import datetime
 
