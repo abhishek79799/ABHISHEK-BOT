@@ -13,7 +13,7 @@ async def _(event):
   await event.reply("PERU HERE",
                     buttons=[
                         [Button.inline("𝙼𝚢 𝚌𝚛𝚎𝚊𝚝𝚘𝚛", data="Creator")]
-                    ]
+                    ])
 
 @BotzHub.on(events.NewMessage(pattern="^/skem"))  # pylint: disable=oof
 async def start_all(event):
