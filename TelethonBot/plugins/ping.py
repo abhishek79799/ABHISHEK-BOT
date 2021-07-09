@@ -30,22 +30,13 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-@BotzHub.on(events.NewMessage(pattern=None))
+@BotzHub.on(events.NewMessage(pattern="/ping"))
 async def ok(event):
-    msg = str(event.text)
-    if not msg == "/ping":
-     return
-
-    start_time = datetime.datetime.now()
-    message = await event.reply("[•] Ping [•]")
-    end_time = datetime.datetime.now()
-    pingtime = end_time - start_time
-    telegram_ping = str(round(pingtime.total_seconds(), 2)) + "s"
-    uptime = get_readable_time((time.time() - StartTime))
-    await message.edit(
-        "<b><i>𝙿𝙾𝙽𝙶!!</i></b>\n"
-        "<b>• 𝚃𝙸𝙼𝙴 𝚃𝙰𝙺𝙴𝙽:</b> <code>{}</code>\n"
-        "<b>• 𝚂𝚃𝙰𝚁𝚃𝙴𝙳 𝚂𝙺𝙴𝙼 𝙵𝚁𝙾𝙼:</b> <code>{}</code>".format(telegram_ping, uptime),
-        parse_mode="html",
+    start = time()
+    m_reply = await m.reply_text("...")
+    delta_ping = time() - start
+    await m_reply.edit_text(
+        f"ＰＯＮＧ!!\n"
+        f"🤖 𝙿𝙸𝙽𝙶: `{delta_ping * 1000:.3f} 𝚖𝚜`"
     )
 
