@@ -1,3 +1,4 @@
+from .. import BotzHub
 from telethon import events
 import time
 from datetime import datetime
