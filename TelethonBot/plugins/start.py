@@ -1,7 +1,7 @@
 # By < @xditya >
 # // @BotzHub //
 from .. import BotzHub
-from telethon import events, Button
+from telethon import events, custom, Button
 
 @BotzHub.on(events.NewMessage(incoming=True, pattern="/start"))
 async def start(event):
