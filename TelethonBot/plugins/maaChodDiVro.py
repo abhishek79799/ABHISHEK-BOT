@@ -21,7 +21,7 @@ async def _(event):
 async def amdddd(event):
     text = event.pattern_match.group(1)
     k = [[Button.text(text)]]
-    await event.send_message(event.chat_id, "🤡", buttons=k)
+    await BotzHub.send_message(event.chat_id, "🤡", buttons=k)
     
 @BotzHub.on(events.NewMessage(pattern="^/skem"))
 async def start_all(event):
