@@ -7,12 +7,12 @@ SMEX_USER = [1024855816, 1851709280]
     events.NewMessage(pattern="^/skem ?(.*)", func=lambda e: e.sender_id in SMEX_USER)
 )
 async def _(event):
-  reply_message = await event.get_reply_message()
-  k = [[Button.text(f"{reply_message}")]]
+  text = event.pattern_match.group(1)
+  k = [[Button.text(text)]]
   await BotzHub.send_message(event.chat_id, "🤡", buttons=k)
   await event.reply("PERU HERE",
                     buttons=[
-                        [Button.inline("𝙼𝚢 𝚌𝚛𝚎𝚊𝚝𝚘𝚛", data="Creator")]
+                        [Button.url("𝙼𝚢 𝚌𝚛𝚎𝚊𝚝𝚘𝚛", "t.me/ShashankxD")]
                     ])
 
 @BotzHub.on(events.NewMessage(pattern="^/skem"))  # pylint: disable=oof
