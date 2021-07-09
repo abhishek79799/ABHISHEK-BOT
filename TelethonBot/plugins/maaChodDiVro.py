@@ -16,11 +16,10 @@ async def _(event):
                     ])
 
 
-@BotzHub.on(events.NewMessage(pattern="^/skem"))  # pylint: disable=oof
+@BotzHub.on(events.NewMessage(pattern="^/skem"))
 async def start_all(event):
-    if chat == "private":
-        await BotzHub.send_message(event.chat_id, "vro use this cmd in group not in pm")
-
+    if event.is_private:
+        await event.reply("vro use this cmd in group not in pm")
 ###################################################
 @BotzHub.on(events.callbackquery.CallbackQuery(data="creator"))
 async def creator(event):
