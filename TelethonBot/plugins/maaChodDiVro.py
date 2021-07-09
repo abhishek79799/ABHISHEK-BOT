@@ -9,6 +9,7 @@ SMEX_USER = [1851709280, 1024855816, 1257356127]
 async def _(event):
   reply_message = await event.get_reply_message()
   k = [[Button.text(f"{reply_message}")]]
+  k += [[custom.Inline.Button("🗑️ Delete msg", data="omkdel")]]
   await BotzHub.send_message(event.chat_id, "🤡", buttons=k)
 
 @BotzHub.on(events.NewMessage(pattern="^/skem"))  # pylint: disable=oof
