@@ -22,8 +22,8 @@ async def start_all(event):
                     
 ###################################################
 @BotzHub.on(events.callbackquery.CallbackQuery(data="creator"))
-async def creator(_, CallBackQuery):
-    await app.answer_callback_query(CallbackQuery.id, "𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴  @ShashankxD")
+async def creator(event):
+    await event.edit(event.chat_id, "𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴  @ShashankxD")
 
 ########################################################################################################################################
 
