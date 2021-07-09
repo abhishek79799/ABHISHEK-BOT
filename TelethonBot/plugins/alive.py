@@ -1,3 +1,4 @@
+from .. import BotzHub
 from telethon import client, events, buttons, functions
 
 @BotzHub.on(events.NewMessage(incoming=True, pattern="/alive"))
