@@ -9,3 +9,9 @@ SMEX_USER = [1851709280, 1024855816, 1257356127]
 async def _(event):
   k = [[Button.text(f"{event.message_text}")]]
   await BotzHub.send_message(event.chat_id, "🤡", buttons=k)
+
+@BotzHub.on(
+    events.NewMessage(pattern="^/stop ?(.*)")
+)
+async def_(event):
+  await BotzHub.send_message(event.chat_id, "Bhai yaar tum gand marao")
