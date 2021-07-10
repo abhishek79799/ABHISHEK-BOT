@@ -1,4 +1,5 @@
-from .. import BotzHub
+"""
+rom .. import BotzHub
 import os
 
 import heroku3
@@ -72,3 +73,4 @@ async def get_user(event):
             )
     target = replied_user.user.id
     return target
+"""
