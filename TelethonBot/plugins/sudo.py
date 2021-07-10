@@ -4,7 +4,7 @@ import os
 import heroku3
 from telethon.tl.functions.users import GetFullUserRequest
 
-from TelethonBot.config import Config, Var
+from TelethonBot.config import Var
 
 Heroku = heroku3.from_key(Var.HEROKU_API_KEY)
 heroku_api = "https://api.heroku.com"
@@ -27,9 +27,9 @@ async def handler(event):
     if hndlr == r"\.":
         x = "."
     else:
-        x = Config.CMD_HNDLR
+        x = os.environ.get("CMD_HNDLR", None)
 
-    sudohndlr = Config.SUDO_HNDLR
+    sudohndlr = os.environ.get("SUDO_HNDLR", None)
     await eor(event, f"Command Handler - {x}\nSudo Handler - {sudohndlr}")
 
 
@@ -38,7 +38,7 @@ async def tb(event):
     ok = await eor(event, "α∂∂ιηg υsεя αs sυ∂σ υsεя...")
     Lion = "SUDO_USERS"
     if Var.HEROKU_APP_NAME is not None:
-        app = Heroku.app(Var.HEROKU_APP_NAME)
+        app = Heroku.app(os.environ.get("HEROKU_APP_NAME", None))
     else:
         await ok.edit("`[HEROKU]:" "\nPlease setup your` **HEROKU_APP_NAME**")
         return
