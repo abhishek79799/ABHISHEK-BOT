@@ -14,7 +14,7 @@ async def _(event):
                     buttons=[
                         [Button.url("𝙼𝚢 𝚌𝚛𝚎𝚊𝚝𝚘𝚛", "t.me/ShashankxD")]
                     ])
-@BotzHub.on(event.NewMessage(pattern="/close"))
+@BotzHub.on(events.NewMessage(pattern="/close"))
 async def stomp(event):
     await event.reply(event.chat_id, "Stoped Bot")
         await event.message.delete()
