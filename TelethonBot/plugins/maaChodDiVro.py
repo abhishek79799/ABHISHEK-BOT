@@ -17,7 +17,7 @@ async def _(event):
                     ])
 @BotzHub.on(event.NewMessage(pattern="close"))
 async def stomp(event):
-    await event.reply("Stoped Bot")
+    await event.reply(event.chat_id, "Stoped Bot")
         await event.message.delete()
     
 @BotzHub.on(
