@@ -1,5 +1,5 @@
 from .. import BotzHub
-from telethon import event
+from telethon import events
 
 @BotzHub.on(events.NewMessage(pattern="/skip"))
 async def oommkkj(event):
