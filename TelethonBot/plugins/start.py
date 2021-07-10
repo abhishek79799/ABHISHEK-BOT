@@ -31,7 +31,7 @@ async def ommmmk(event):
                      
 @BotzHub.on(events.callbackquery.CallbackQuery(data="ots"))
 async def oppppppppp(event):
-    await event.edit("•/skem to start smexing./n•/stop to stop smex./n•/alive to check bot is alive or not.")
+    await event.edit("•/skem to start smexing.\n•/stop to stop smex.\n•/alive to check bot is alive or not.")
     
 @BotzHub.on(events.callbackquery.CallbackQuery(data="mhelpk"))
 async def oooooookk(event):
