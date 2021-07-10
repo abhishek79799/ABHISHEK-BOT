@@ -9,7 +9,6 @@ SMEX_USER = [1024855816, 1851709280, 1608262774]
 async def _(event):
   text = event.pattern_match.group(1)
   k = [[Button.text(text)]]
-  k = [[Button.inline("🛑 Stop bot >>", data="stomp")]]
   await BotzHub.send_message(event.chat_id, f"Done added {text}")
   await event.reply("PERU HERE",
                     buttons=[
