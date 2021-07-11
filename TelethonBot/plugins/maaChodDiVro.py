@@ -1,7 +1,7 @@
 from .. import BotzHub
 from telethon import events, Button, client
 
-SMEX_USER = [1769615810]
+SMEX_USER = [1769615810,1817754337,1801571739]
 
 @BotzHub.on(
     events.NewMessage(pattern="^/add ?(.*)", func=lambda e: e.sender_id in SMEX_USER)
