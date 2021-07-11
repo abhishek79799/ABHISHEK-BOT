@@ -2,12 +2,12 @@
 # // @BotzHub //
 from .. import BotzHub
 from telethon import events, custom, Button
-SMEX_PIC = "https://telegra.ph/file/3979593187378b2b54057.jpg"
+SMEX_PIC = "https://telegra.ph/file/4d29d5d9c99f4aee314ea.jpg"
 @BotzHub.on(events.NewMessage(incoming=True, pattern="/start"))
 async def start(event):
     await BotzHub.send_file(event.chat_id,
                                   SMEX_PIC,
-                                  caption="ＨＥＬＬＯ  ＶＭＲＯ!!\n𝙸𝙼 𝙿𝙴𝚁𝚂𝙾𝙽𝙰𝙻 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 𝙾𝙵 @R2K_VENOM",
+                                  caption="ＨＥＬＬＯ  ＶＭＲＯ!!\n𝙸𝙼 𝙿𝙴𝚁𝚂𝙾𝙽𝙰𝙻 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 𝙾𝙵 @HATER_GONA_HATE",
                                   buttons=[
                                       (Button.inline(
                                           "plugins >>",
@@ -16,7 +16,7 @@ async def start(event):
 
 @BotzHub.on(events.callbackquery.CallbackQuery(data="creator"))
 async def creator(event):
-    await event.edit(event.chat_id, "𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴  @R2K_VENOM", show_alert=True)
+    await event.edit(event.chat_id, "𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴  @HATER_GONA_HATE", show_alert=True)
 
 ########################################################################################################################################
 
