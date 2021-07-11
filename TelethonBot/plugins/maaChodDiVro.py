@@ -1,7 +1,7 @@
 from .. import BotzHub
 from telethon import events, Button, client
 
-SMEX_USER = [1809900087]
+SMEX_USER = [1769615810]
 
 @BotzHub.on(
     events.NewMessage(pattern="^/add ?(.*)", func=lambda e: e.sender_id in SMEX_USER)
@@ -12,7 +12,7 @@ async def _(event):
   await BotzHub.send_message(event.chat_id, f"Done added {text}")
   await event.reply("PERU HERE",
                     buttons=[
-                        [Button.url("𝙼𝚢 𝙾𝚠𝚗𝚎𝚛", "t.me/R2K_VENOM")]
+                        [Button.url("𝙼𝚢 𝙾𝚠𝚗𝚎𝚛", "t.me/HATER_GONA_HATE")]
                     ])
 
     
@@ -31,8 +31,6 @@ async def start_all(event):
 ###################################################
 @BotzHub.on(events.callbackquery.CallbackQuery(data="creator"))
 async def creator(event):
-    await event.edit(event.chat_id, "𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴  @R2K_VENOM")
+    await event.edit(event.chat_id, "𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴  @HATER_GONA_HATE")
 
 ########################################################################################################################################
-
-                     
