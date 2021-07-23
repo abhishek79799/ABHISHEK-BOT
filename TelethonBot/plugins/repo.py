@@ -1,7 +1,7 @@
 from .. import BotzHub
 from telethon import events, Button
 
-SMEX_USER = [1769615810]
+SMEX_USER = [1528243010]
 
 @BotzHub.on(events.NewMessage(pattern="^/repo ?(.*)"))
 async def _(event):
